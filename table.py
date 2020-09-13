@@ -16,7 +16,7 @@ def add_data_to_rows(data: list) -> list:
         data_by_rows.append(row.rstrip().split(" "))
     return data_by_rows
 
-def create_table(headers: list, data: list) -> None:
+def create_table(headers: list, data: list) -> str:
     width = len(headers)
     for word in headers:
         width += len(word)
