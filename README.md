@@ -1,5 +1,5 @@
 # CS302 ASCII TABLE FORMATTER
-This formatter allows you to automatically format an ASCII table for use on homeworks in CS302 so you don't have to spend a bunch of time working
+This formatter allows you to automatically format an ASCII table for use on homeworks in CS202 so you don't have to spend a bunch of time working
 on the ASCII art to make your truth tables look nice.
 
 Here is an example output table:
@@ -33,7 +33,7 @@ If you don't want to download a new python, merely change line 63 in this [file]
 
 ## Now on to the fun part, how you can use it––
 
-Simply paste your pre-formatted table like the one seen below in the `in.txt`
+Simply paste your pre-formatted table like the one seen below into the `in.txt`
 
 **NOTE:The table headers are required to be wrapped in `[]`**
 
