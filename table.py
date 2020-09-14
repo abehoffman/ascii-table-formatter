@@ -42,7 +42,7 @@ def create_table(headers: list, data: list) -> str:
     # add the headers
     for header in headers:
         table += f'|{header}'
-    table = table[:-1] + ' |'
+    table = f'{table}|'
     table += f'\n{mid_delimiter}\n|'
 
     # add the data
