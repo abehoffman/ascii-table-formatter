@@ -52,9 +52,14 @@ Simply paste your pre-formatted table like the one seen below into the `in.txt`
 Since it uses `stdin` and `stdout` from the `sys` library, you can set the input and output file paths.
 ```python3 table.py < in.txt > out.txt```
 
-Hopefully this saves you a bit of time.
+### Running without command line arguments
+Running the file with no arguments will open up a window where you can input the numbers of rows and columns that you want. From there, pressing `Generate` will open a window where you can input all of your data. 
+
+Once you have done that, simply press `Copy` and the fully formatted table will be copied to your clipboard. 
+
 
 ### How can I use this?
 Either copy and paste the table.py file into your editor of choice or clone the repo with git. More information on how to use git can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
+Hopefully this saves you a bit of time.
 
