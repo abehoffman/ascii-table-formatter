@@ -4,9 +4,10 @@
 from sys import stdin as s
 from sys import stdout
 from sys import argv
-import tkinter as tk
+import tkinterTrimmed as tk
 
-from pyperclipTrimmed import copy
+from pyperclipTrimmed import copy  # pyperclip not necessary to install
+
 
 class App(tk.Frame):
     def __init__(self, master):
@@ -115,9 +116,9 @@ def create_table(headers: list, data: list) -> str:
 
 
 def entriesToTable(matrix):
-    table_headers = [entry.get() for entry in matrix[0]]
-    data_by_rows = [[entry.get() for entry in matrix[i + 1]] for i in range(len(matrix) - 1)]
-    return create_table(table_headers, data_by_rows)
+    tableHeaders = [entry.get() for entry in matrix[0]]
+    dataByRows = [[entry.get() for entry in matrix[i + 1]] for i in range(len(matrix) - 1)]
+    return create_table(tableHeaders, dataByRows)
 
 
 if len(argv) < 2:
