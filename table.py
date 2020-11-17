@@ -72,11 +72,12 @@ def add_data_to_rows(data: list) -> list:
 
 
 def create_table(headers: list, data: list) -> str:
-    width = len(headers)
-    for word in headers:
-        width += len(word)
-
     width_table = [len(word) for word in headers]
+
+    for row in data:
+        for c in range(len(headers)):
+            if len(row[c]) > width_table[c]:
+                width_table[c] = len(row[c])
 
     top_line = '.'
     for width in width_table:
@@ -95,8 +96,8 @@ def create_table(headers: list, data: list) -> str:
 
     table = f'{top_line}\n'
     # add the headers
-    for header in headers:
-        table += f'|{header}'
+    for i, header in enumerate(headers):
+        table += f'|{header.center(width_table[i])}'
     table = f'{table}|'
     table += f'\n{mid_delimiter}\n|'
 
